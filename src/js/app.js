@@ -1,7 +1,5 @@
 function send(el){
     document.getElementById("loader").style.display = "block"
-    var ajax = new XMLHttpRequest();
-    var csrf = document.getElementsByTagName('input')[0].value
     var txt = el.value
     var data = count(txt);
     document.getElementById("word-count").innerHTML = data.word_count;
