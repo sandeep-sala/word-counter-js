@@ -22,9 +22,10 @@ function send(el){
 function count(el){
     var word_dict = {}
     var word_list  = el.trim().split(" ")
+    var word_count =  word_list.length
     if ( word_list.length == 1 && word_list[0] == "" ){word_count = 0}
-    letter_count = word_list.length 
-    for(i=0;i<letter_count;i++){
+    letter_count = (el.trim().replace(" ","")).length 
+    for(i=0;i<word_count;i++){
         if(word_list[i] != ''){
             if(word_list[i] in word_dict){ word_dict[word_list[i]] += 1 }
             else{ word_dict[word_list[i]] = 1 }
