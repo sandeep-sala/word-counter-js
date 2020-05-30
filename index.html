@@ -1,1 +1,42 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+    </head>
+    <body>{% csrf_token %}
+    <div class="main-div_warapper">
+        <div class="main-div">
+            <div class="counter-header">
+                <h3>Type here to count words and character</h3>
+            </div>
+            <section class="counter_wrapper">
+                <textarea class="counter-input" oninput="send(this)" ></textarea><br>
+                <div class="counter-info"><b id="word-count">0</b> Words <b id="letter-count">0</b> Characters<div id="loader"></div></div>
+                
+            </section>
+            <section class="counter_table_wrapper">
+                 <table class="counter_table">
+                    <thead>
+                      <tr>
+                        <th>Sr.</th>
+                        <th>Repeated Word</th>
+                        <th>Words Count</th>
+                      </tr>
+                    </thead>
+                    <tbody id ="counter-table">
+                      <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </section>
+        </div>
+    </div>
+
+        <script src="{% static 'js/app.js' %}"></script>
+    </body>
+</html>
