@@ -65,6 +65,10 @@
     text-align:center;
 }
 
+th{
+border-bottom: 1px solid #80808073;
+}
+
 #loader {
     border: 5px solid #bae8bf; /* Light grey */
     border-top: 5px solid #3cd14e; /* Blue */
@@ -76,6 +80,17 @@
     right: 5px;
     bottom: 2px;
     display: none;
+}
+
+footer.main-div_footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fffffffa;
+    font-size: 12px;
+    padding: 3px;
+    background-color: #3dd14f;
 }
   
 @keyframes spin {
