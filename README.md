@@ -21,6 +21,5 @@ open in index.html browser
 
 
 ## Screenshots
-First Signup the user & then login
 
 ![ScreenShot](https://i.postimg.cc/d1hkYpK3/Annotation-2020-06-07-154204.png)
