@@ -16,7 +16,7 @@ git clone https://github.com/sandeep-sala/word-counter.git <folder name>
 ## Execute
 
 ```
-open in index.html browser
+open index.html in browser
 ```
 
 
