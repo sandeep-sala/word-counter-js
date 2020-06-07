@@ -4,8 +4,6 @@ It is an Word Counter which count number of words ,letter and also give count of
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to Download.
-
 ```bash
 git clone https://github.com/sandeep-sala/word-counter.git
 or
