@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="Word Counter">
-      <meta name="keywords" content="word,count,wordcounter,word-counter">
-      <meta name="author" content="Sandeep Sala">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Word Counter</title>
-      <link rel="stylesheet" type="text/css" href="src/css/app.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Word Counter">
+    <meta name="keywords" content="word,count,wordcounter,word-counter">
+    <meta name="author" content="Sandeep Sala">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="icon" href="https://i.postimg.cc/NF3M4ryF/circle-cropped.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="src/css/app.css">
+</head>
+
+<body>
     <div class="main-div_warapper">
         <div class="main-div">
             <div class="counter-header">
-                <h3>Type here to count words and character</h3>
+                <h3>Word Counter</h3>
+                <h5>Type here to count words and character</h5>
             </div>
             <section class="counter_wrapper">
                 <textarea class="counter-input" oninput="send(this)"></textarea><br>
-                <div class="counter-info"><b id="word-count">0</b> Words <b id="letter-count">0</b> Characters<div id="loader"></div></div>
+                <div class="counter-info"><b id="word-count">0</b> Words <b id="letter-count">0</b> Characters
+                    <div id="loader"></div>
+                </div>
             </section>
             <section class="counter_table_wrapper">
-                 <table class="counter_table">
+                <table class="counter_table">
                     <thead>
-                      <tr>
-                        <th>Sr.</th>
-                        <th>Repeated Word</th>
-                        <th>Words Count</th>
-                      </tr>
+                        <tr>
+                            <th>Sr.</th>
+                            <th>Repeated Word</th>
+                            <th>Words Count</th>
+                        </tr>
                     </thead>
-                    <tbody id ="counter-table">
-                      <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                      </tr>
-                      
+                    <tbody id="counter-table">
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
                     </tbody>
-                  </table>
+                </table>
             </section>
         </div>
     </div>
     <footer class="main-div_footer">made with ❤️ ~ <b>Sandeep Sala</b></footer>
     <script src="src/js/app.js"></script>
-    </body>
+</body>
+
 </html>
